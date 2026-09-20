@@ -1,0 +1,22 @@
+{
+  "confidence_threshold": 0.85,
+  "d5_fusion": {
+    "pretrained_x1_logit": {"weight": 2.135093328939189, "scale": 7.1335612708484035},
+    "generic_ocr_margin": {"weight": 1.7415376203453157, "scale": 0.4974508892525408},
+    "east_slavic_ocr_margin": {"weight": 1.1809645806669364, "scale": 0.6998102259034565},
+    "cyrillic_ocr_margin": {"weight": 1.3070630556970457, "scale": 0.6333520662068896},
+    "cjk_x_east_slavic_margin": {"weight": -0.19901615895497904, "scale": 0.09167134551493458},
+    "cjk_x_cyrillic_margin": {"weight": -0.029716494432873896, "scale": 0.08722004907849257}
+  },
+  "e2_fusion": {
+    "d5_logit_weight": 0.7808100271438818,
+    "expanded_clean_x1_logit_weight": 0.5729108665456091
+  },
+  "hard_case_fusion": {
+    "e2_logit": {"weight": 1.2627479156335446, "scale": 0.9600476416313009},
+    "english_ocr_margin": {"weight": -0.29223363532481755, "scale": 0.12275701444886841},
+    "latin_ocr_margin": {"weight": 0.013763615102158393, "scale": 0.2372281229421317},
+    "ocr_v6_small_margin": {"weight": 0.7337338547827886, "scale": 0.18120246983182198}
+  },
+  "seed": 20260920
+}
