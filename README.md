@@ -35,6 +35,28 @@ solution.ipynb — краткое описание и удобный запус�
 
 Проверено на Python 3.12, Windows и NVIDIA GPU.
 
+Установка зависимостей:
+
+```powershell
+python -m pip install paddlepaddle-gpu==3.3.1 -i https://www.paddlepaddle.org.cn/packages/stable/cu129/
+python -m pip install -r requirements.txt
+```
+
+Запуск:
+python run.py `
+  --images ..\images `
+  --sample ..\sample_submission.csv `
+  --output reproduced_submission.csv
+
+Быстрый запуск:
+python run.py `
+  --images ..\images `
+  --sample ..\sample_submission.csv `
+  --output sparse_submission.csv `
+  --mode sparse
+
+Пути `..\images` и `..\sample_submission.csv` предполагают, что папка с изображениями и `sample_submission.csv` лежат рядом с папкой репозитория.
+
 Официальные OCR-модели Paddle скачиваются автоматически при первом запуске
 Можно также открыть solution.ipynb
 Режим exact используется по умолчанию и воспроизводит отправленный CSV.
